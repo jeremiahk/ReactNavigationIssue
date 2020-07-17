@@ -3,23 +3,12 @@ import { StyleSheet, Button } from 'react-native';
 
 import { Text, View } from '../components/Themed';
 
-export default function TabOneScreen({ navigation }) {
+export default function TabTwoScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+      <Text style={styles.title}>Screen Two</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <Button 
-        title="Test" 
-        onPress={() => 
-          navigation.navigate('TabTwo', {
-            screen: 'Screen2',
-            initial: false,
-            params: {
-              screen: 'Screen3'
-            },
-          })
-        } 
-      />
+      <Button title="Next Screen" onPress={() => navigation.navigate("Screen3")} />
     </View>
   );
 }
