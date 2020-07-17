@@ -18,7 +18,7 @@ export default function TabOneScreen({ navigation }) {
               screen: 'Screen3'
             },
           })
-        } 
+        }   
       />
     </View>
   );
